@@ -1,0 +1,33 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column; /* Stacks the heading and table vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white; /* Adjust the color as needed */
+    margin-bottom: 20px; /* Adds space between the heading and the table */
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white; /* Optional: Makes the table background white */
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding: 50px; /* Adds padding inside the cells */
+}
+
+th {
+    background-color: #f2f2f2; /* Optional: Different background for headers */
+}

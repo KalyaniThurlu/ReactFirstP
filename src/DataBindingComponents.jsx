@@ -1,13 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
-export function  Data(){
+export function DataBinding(){
     const [name,setName]=useState("")
+ 
     useEffect(()=>{
-        setName("seetha")
+        setName("suma")
+
     },[])
-    return(
-        <div><h1>hello</h1>
-        value:{name}</div>
+    return (
+        <div>
+<h1>wellcome</h1>
+
+name:{name}
+        </div>
     )
-    
 }

@@ -5,14 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import { CurrencyData, DataValue } from './NmberDataBindingComponent';
 //import NetFlixIndex, { NetflixIndexComponent } from './NetflixIndexComponent';
-import { Data, DataBinding, DataBindingComponets } from './DataBindingComponents';
-
-
-
-
- 
-
+//import { Data, DataBinding, DataBindingComponets } from './DataBindingComponents';cd
 //import Table from './components/table/table';
 //import UserLog from './components/table/login';
 //import { Login } from './components/table/loginusestate';
@@ -23,7 +18,7 @@ import { Data, DataBinding, DataBindingComponets } from './DataBindingComponents
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<Data/>
+<CurrencyData/>
   </React.StrictMode>
 );
 

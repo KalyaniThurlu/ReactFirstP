@@ -20,5 +20,6 @@ curreny:{formattedUSD}
 </div>
 
 
+
 )
 }

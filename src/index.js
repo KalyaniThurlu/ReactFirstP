@@ -5,10 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import { XmlData } from './XmlHttpRequestComponent';
+
+
+//import { Dataobj } from './ObjectComponent';
+
+
+//import {  Exsymbol } from './NulldatatypeComponent';
+//import { ExRegular } from './RegEXComponent';
+//import { ArrayData } from './ArrayDatatypeComponent';
+
+
+
 //import { DataString, My, Null, SymbolExample, Undefined } from './SetdateComponent';
 //import { DataStringType} from './StringTypeComponent';
 //import { GetDatatype, Type } from './GetDatecomponent';
-import { MyNum, Myfun } from './GetDate1Component';
+//import { MyNum, Myfun } from './GetDate1Component';
+//import { ExNull } from './NulldatatypeComponent';
 //import { My } from './SetdateComponent';
 //import { DataString, HelloComponent } from './helloComponent';
 
@@ -31,7 +44,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Myfun/>
+<XmlData/>
   </React.StrictMode>
 );
 

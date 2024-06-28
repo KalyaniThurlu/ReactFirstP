@@ -5,24 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import { XmlHttpRequestComponent } from './ApifetchComponent';
+//import { JqueryAjaxComponent } from './JqueryAjaxComponent';
+//import { AxiosData } from './AxiosComponent';
+import { OneWayDataBinding } from './OneWayDataBindingComponent';
+//import { XmlHttpRequestComponent } from './ApifetchComponent';
 //import { MyData } from './Xmlhttpcomponent';
-
-
 //import { DataComponent } from './XmlHttpRequestComponent';
-
-
-
-
 //import { Dataobj } from './ObjectComponent';
-
-
 //import {  Exsymbol } from './NulldatatypeComponent';
 //import { ExRegular } from './RegEXComponent';
 //import { ArrayData } from './ArrayDatatypeComponent';
-
-
-
 //import { DataString, My, Null, SymbolExample, Undefined } from './SetdateComponent';
 //import { DataStringType} from './StringTypeComponent';
 //import { GetDatatype, Type } from './GetDatecomponent';
@@ -30,12 +22,8 @@ import { XmlHttpRequestComponent } from './ApifetchComponent';
 //import { ExNull } from './NulldatatypeComponent';
 //import { My } from './SetdateComponent';
 //import { DataString, HelloComponent } from './helloComponent';
-
-
 //import { BooleanData } from './BooleanDataComponent';
 //import { CurrencyData } from './NumberDataBindingComponent';
-
-
 //import { CurrencyData, DataValue } from './NumberDataBindingComponent';
 //import NetFlixIndex, { NetflixIndexComponent } from './NetflixIndexComponent';
 //import { Data, DataBinding, DataBindingComponets } from './DataBindingComponents';
@@ -50,7 +38,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<XmlHttpRequestComponent/>
+<OneWayDataBinding/>
   </React.StrictMode>
 );
 

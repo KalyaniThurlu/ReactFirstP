@@ -4,13 +4,13 @@ import React, { useState } from "react";
 export function OneWayDataBinding() {
   const [userName, setUserName] = useState(" hellolukky");
 
-  function changeHandleFun(event) {
+  function handleNameChange(event) {
     setUserName(event.target.value);
   }
 
   return (
     <div>
-      <input type="text" onChange={changeHandleFun} value={userName} />
+      <input type="text" onChange={handleNameChange} value={userName} />
       <h2> {userName}</h2>
     </div>
   );

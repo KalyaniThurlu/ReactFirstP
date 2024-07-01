@@ -5,9 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import {  XmlhttpRequests } from './practice';
+import { Mynum } from './hello';
+//import { DataBinding } from './DatabindingComnent';
+//import {     Wellcome} from './practice';
 //import { JqueryAjaxComponent } from './JqueryAjaxComponent';
 //import { AxiosData } from './AxiosComponent';
-import { OneWayDataBinding } from './OneWayDataBindingComponent';
+//import { OneWayDataBinding } from './OneWayDataBindingComponent';
 //import { XmlHttpRequestComponent } from './ApifetchComponent';
 //import { MyData } from './Xmlhttpcomponent';
 //import { DataComponent } from './XmlHttpRequestComponent';
@@ -38,7 +42,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<OneWayDataBinding/>
+<XmlhttpRequests/>
   </React.StrictMode>
 );
 

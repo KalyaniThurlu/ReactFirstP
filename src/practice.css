@@ -1,0 +1,18 @@
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    width: max-content;
+    margin-top: 60px;
+
+}
+
+.log-form {
+    border: 2px solid black; 
+    border-radius: 20%;
+    gap: 10px;
+    padding: 20px; /* Adds space inside the border */
+   
+     /* Adds a background color for better visibility */
+}

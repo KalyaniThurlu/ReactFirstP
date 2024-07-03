@@ -35,7 +35,8 @@ export function ExMouserOver(){
                 <div className="col-2">
                     {
                         images.map(image=>
-                            <img onMouseOver={GeneratePreview} key={image.img_src} className="d-block my-3" width="50%" src={image.img_src} />
+                            <img onMouseOver={GeneratePreview} key={image.img_src}
+                             className="d-block my-3" width="50%" src={image.img_src} />
                         )
                     }
                 </div>

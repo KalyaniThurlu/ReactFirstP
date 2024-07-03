@@ -6,12 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import {  XmlhttpRequests } from './practice';
-import { Mynum } from './hello';
+
+
 import { HandlerUserName } from './Exvent';
 import { ExEventDemo, ExEventDemoComponent } from './Event_demo';
 import { ExEventArguments } from './Event_Arguments';
 import { ExEventPropagation } from './EventPropagation';
-import {  ExMouserOver} from './ExMouseEvent';
+import {  ExMouserOver} from './Ex_MouseOverEvent';
+
+
+import { StyleBinding } from './stlye_binding';
+
+
+import { ExMouseMove } from './Ex_MouseMoveEvent';
+import { ExOnchangeComponent } from './Ex_OnchangeEvent';
+import { Exanimation } from './Animation';
+
+
 //import { DataBinding } from './DatabindingComnent';
 //import {     Wellcome} from './practice';
 //import { JqueryAjaxComponent } from './JqueryAjaxComponent';
@@ -47,7 +58,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<ExMouserOver/>
+<Exanimation/>
   </React.StrictMode>
 );
 

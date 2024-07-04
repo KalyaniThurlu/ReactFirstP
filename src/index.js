@@ -21,6 +21,7 @@ import { StyleBinding } from './stlye_binding';
 import { ExMouseMove } from './Ex_MouseMoveEvent';
 import { ExOnchangeComponent } from './Ex_OnchangeEvent';
 import { Exanimation } from './Animation';
+import { KeyDemo } from './Ex_keyEvent';
 
 
 //import { DataBinding } from './DatabindingComnent';
@@ -58,7 +59,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Exanimation/>
+<KeyDemo/>
   </React.StrictMode>
 );
 

@@ -4,6 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react"
 
 export function KeyDemo(){
+    const [codeError, setCodeError] = useState('d-none');
 
     const [users, setUsers] = useState([{UserId:''}]);
     const [userError, setUserError] = useState('');
@@ -11,7 +12,7 @@ export function KeyDemo(){
     const [errorClass, setErrorClass] = useState('');
     const [pwdStrength, setPwdStrength] = useState({width:''});
     const [bgClass, setBgClass] = useState('');
-    const [codeError, setCodeError] = useState('d-none');
+
 
 
     useEffect(()=>{
@@ -44,6 +45,7 @@ export function KeyDemo(){
                  setErrorClass('text-success');
                  setPwdStrength({width:'100%'});
                  setBgClass('bg-success');
+
             } else {
                 if(e.target.value.length<4){
                     setPwdError('Poor Password');
@@ -59,13 +61,15 @@ export function KeyDemo(){
             }
     }
 
-    function VerifyCode(e){
-         if(e.which>=65 && e.which<=90){
-             setCodeError('d-block');
-         } else {
-            setCodeError('d-none');
-         }
+ 
+    function verifycode(e) {
+        if (e.which >= 65 && e.which <= 90) {
+            setCodeError("d-block");  // Show the element if an uppercase letter is pressed
+        } else {
+            setCodeError("d-none");   // Hide the element for any other key press
+        }
     }
+    
 
     return(
         <div className="container-fluid">
@@ -85,8 +89,12 @@ export function KeyDemo(){
                     </div>
                 </dd>
                 <dd className={errorClass}>{pwdError}</dd>
+                <div className="progress">
+                    <dl style={pwdStrength} className={`progress-bor progress-bor-animated progress-bor-striped ${pwdError}`}></dl>
+                
+                </div>
                 <dt>Verify Code</dt>
-                <dd><input type="text" onKeyPress={VerifyCode} className="form-control" placeholder="Lowercase Code Only" /></dd>
+                <dd><input type="text" onKeyPress={ verifycode  } className="form-control" placeholder="Lowercase Code Only" /></dd>
                 <dd className={codeError}>
                     <div className="text-warning">
                     <span className="bi bi-exclamation-triangle-fill"></span> Warning  Caps ON

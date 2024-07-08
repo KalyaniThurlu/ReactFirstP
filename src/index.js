@@ -5,23 +5,44 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import {  XmlhttpRequests } from './practice';
+import {  StateEventDemo} from './StateEvents';
+import { ExDblclick } from './Ex_DBlClick';
+import { Exchange, ExHandler, Exmouse, ExMouse } from './practices';
+import { ExclearTimeout, Extimeout } from './Ex_SetTimeOut';
+import { Intervaldemo } from './Ex_interval';
 
 
-import { HandlerUserName } from './Exvent';
-import { ExEventDemo, ExEventDemoComponent } from './Event_demo';
-import { ExEventArguments } from './Event_Arguments';
-import { ExEventPropagation } from './EventPropagation';
-import {  ExMouserOver} from './Ex_MouseOverEvent';
 
 
-import { StyleBinding } from './stlye_binding';
 
 
-import { ExMouseMove } from './Ex_MouseMoveEvent';
-import { ExOnchangeComponent } from './Ex_OnchangeEvent';
-import { Exanimation } from './Animation';
-import { KeyDemo } from './Ex_keyEvent';
+
+
+
+
+
+
+//import {  XmlhttpRequests } from './practice';
+
+
+//import { HandlerUserName } from './Exvent';
+//import { ExEventDemo, ExEventDemoComponent } from './Event_demo';
+//import { ExEventArguments } from './Event_Arguments';
+//import { ExEventPropagation } from './EventPropagation';
+//import {  ExMouserOver} from './Ex_MouseOverEvent';
+
+
+//import { StyleBinding } from './stlye_binding';
+
+
+//import { ExMouseMove } from './Ex_MouseMoveEvent';
+//import { ExOnchangeComponent } from './Ex_OnchangeEvent';
+//import { Exanimation } from './Animation';
+//import { KeyDemo } from './Ex_keyEvent';
+
+
+
+
 
 
 //import { DataBinding } from './DatabindingComnent';
@@ -59,11 +80,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<KeyDemo/>
+<Intervaldemo/>
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()

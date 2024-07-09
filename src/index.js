@@ -7,9 +7,14 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import {  StateEventDemo} from './StateEvents';
 import { ExDblclick } from './Ex_DBlClick';
-import { Exchange, ExHandler, Exmouse, ExMouse } from './practices';
+
+
 import { ExclearTimeout, Extimeout } from './Ex_SetTimeOut';
 import { Intervaldemo } from './Ex_interval';
+import { DateTimeDisplay } from './Task';
+import { ExTouch, ExtouchEvents, TimerDemo } from './Ex_Touch_Events';
+
+
 
 
 
@@ -80,7 +85,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Intervaldemo/>
+<ExTouch/>
   </React.StrictMode>
 );
 

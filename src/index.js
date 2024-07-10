@@ -12,17 +12,8 @@ import { ExDblclick } from './Ex_DBlClick';
 import { ExclearTimeout, Extimeout } from './Ex_SetTimeOut';
 import { Intervaldemo } from './Ex_interval';
 import { DateTimeDisplay } from './Task';
-import { ExTouch, ExtouchEvents, TimerDemo } from './Ex_Touch_Events';
-
-
-
-
-
-
-
-
-
-
+import { ExTouch } from './Ex_Touch_Events';
+import {  ExApi, Fakestore, NasaAPI } from './Ex_Fecth';
 
 
 
@@ -85,7 +76,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<ExTouch/>
+<Fakestore/>
   </React.StrictMode>
 );
 

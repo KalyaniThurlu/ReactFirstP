@@ -81,7 +81,7 @@ export function Fakestore(){
                     {
                         products.map(product=>
                             <div key={product.id} className="card p-2 m-2" style={{width:'200px'}}>
-                                <img src={product.image} className="card-img-to" height="120px" />
+                                <img src={product.image} className="card-img-top" height="120px" />
                                 <div className="card-header" style={{height:'130px'}}>
                                     <div>
                                         {product.title}

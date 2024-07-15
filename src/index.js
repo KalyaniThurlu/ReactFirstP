@@ -5,18 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import {  StateEventDemo} from './StateEvents';
-import { ExDblclick } from './Ex_DBlClick';
+import { ValidationDemo } from './Ex_validation';
+import { Exyup } from './Ex_yup_validation';
 
 
-import { ExclearTimeout, Extimeout } from './Ex_SetTimeOut';
-import { Intervaldemo } from './Ex_interval';
-import { DateTimeDisplay } from './Task';
-import { ExTouch } from './Ex_Touch_Events';
-import {  ExApi, Fakestore, NasaAPI } from './Ex_Fecth';
-import { Ex } from './exApi';
-import { Exfakestore } from './Ex_Api_AddToCard';
-import { Exform, FormDemo } from './Ex_FormikForm';
+
+
+
+
+
+
+
 
 
 
@@ -80,7 +79,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<FormDemo/>
+<Exyup/>
   </React.StrictMode>
 );
 

@@ -9,6 +9,10 @@ import { ValidationDemo } from './Ex_validation';
 import { Exyup } from './Ex_yup_validation';
 
 
+import { ExFormikDemo, ExformikDemo, FormDemo, FormikComponentDemo } from './Ex_formikComponent';
+import SimpleForm, { Exformikstate, Exstate, FormikComponentDemos } from './Ex_stateForm';
+
+
 
 
 
@@ -79,7 +83,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Exyup/>
+<Exformikstate/>
   </React.StrictMode>
 );
 

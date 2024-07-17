@@ -9,8 +9,19 @@ import { ValidationDemo } from './Ex_validation';
 import { Exyup } from './Ex_yup_validation';
 
 
-import { ExFormikDemo, ExformikDemo, FormDemo, FormikComponentDemo } from './Ex_formikComponent';
+import {  FormikComponentDemo } from './Ex_formikComponent';
 import SimpleForm, { Exformikstate, Exstate, FormikComponentDemos } from './Ex_stateForm';
+import {  DemoNavBar, NavBar } from './ComponentProperties/Navbar';
+import { Home } from './Home.jsx/HomeComponent';
+import { ExNavbar } from './practice/navbar';
+import { Exhome } from './practice/home1';
+import { HookFormDemos } from './Hook-Form/hook-formDemo';
+
+
+
+
+
+
 
 
 
@@ -83,7 +94,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Exformikstate/>
+<Exhome/>
   </React.StrictMode>
 );
 

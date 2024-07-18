@@ -16,29 +16,11 @@ import { Home } from './Home.jsx/HomeComponent';
 import { ExNavbar } from './practice/navbar';
 import { Exhome } from './practice/home1';
 import { HookFormDemos } from './Hook-Form/hook-formDemo';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { DataRow, Home1 } from './Custom_componets/home';
+import { ExHome } from './Grid/home';
 
 
 //import {  XmlhttpRequests } from './practice';
-
-
 //import { HandlerUserName } from './Exvent';
 //import { ExEventDemo, ExEventDemoComponent } from './Event_demo';
 //import { ExEventArguments } from './Event_Arguments';
@@ -53,12 +35,6 @@ import { HookFormDemos } from './Hook-Form/hook-formDemo';
 //import { ExOnchangeComponent } from './Ex_OnchangeEvent';
 //import { Exanimation } from './Animation';
 //import { KeyDemo } from './Ex_keyEvent';
-
-
-
-
-
-
 //import { DataBinding } from './DatabindingComnent';
 //import {     Wellcome} from './practice';
 //import { JqueryAjaxComponent } from './JqueryAjaxComponent';
@@ -94,7 +70,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<Exhome/>
+<ExHome/>
   </React.StrictMode>
 );
 

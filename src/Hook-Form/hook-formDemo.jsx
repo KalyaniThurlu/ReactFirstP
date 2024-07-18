@@ -15,6 +15,12 @@ export function HookFormDemos() {
                 <dl>
                     <dt>UserName</dt>
                     <dd>
+                        {/*The useForm hook is destructured to get 
+                        register, handleSubmit, and formState (which includes errors).
+The register function is used to register the input fields with validation rules.
+The handleSubmit function handles the form submission.
+Errors are displayed if the validation rules are not met.*/}
+
                         <input type="text" name="UserName" {...register("UserName", { required: true, minLength: 4 })} />
                     </dd>
                     <dd className="text-danger">

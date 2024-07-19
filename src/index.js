@@ -7,17 +7,10 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import { ValidationDemo } from './Ex_validation';
 import { Exyup } from './Ex_yup_validation';
+import { DemoLog1 } from './React_Hooks/loginfrom';
 
 
-import {  FormikComponentDemo } from './Ex_formikComponent';
-import SimpleForm, { Exformikstate, Exstate, FormikComponentDemos } from './Ex_stateForm';
-import {  DemoNavBar, NavBar } from './ComponentProperties/Navbar';
-import { Home } from './Home.jsx/HomeComponent';
-import { ExNavbar } from './practice/navbar';
-import { Exhome } from './practice/home1';
-import { HookFormDemos } from './Hook-Form/hook-formDemo';
-import { DataRow, Home1 } from './Custom_componets/home';
-import { ExHome } from './Grid/home';
+
 
 
 //import {  XmlhttpRequests } from './practice';
@@ -70,7 +63,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-<ExHome/>
+
+
+<DemoLog1/>
   </React.StrictMode>
 );
 

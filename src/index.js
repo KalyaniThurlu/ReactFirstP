@@ -10,6 +10,11 @@ import { Exyup } from './Ex_yup_validation';
 import { DemoLog1 } from './React_Hooks/loginfrom';
 
 
+import { ContextDemo, Level1Component } from './context/context_demo';
+
+
+
+
 
 
 
@@ -65,7 +70,7 @@ root.render(
 
 
 
-<DemoLog1/>
+<ContextDemo/>
   </React.StrictMode>
 );
 

@@ -11,6 +11,15 @@ import { DemoLog1 } from './React_Hooks/loginfrom';
 
 
 import { ContextDemo, Level1Component } from './context/context_demo';
+import { ReducerDemo } from './Reducer/demo_reducer';
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +79,7 @@ root.render(
 
 
 
-<ContextDemo/>
+<ReducerDemo/>
   </React.StrictMode>
 );
 

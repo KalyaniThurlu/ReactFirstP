@@ -12,6 +12,19 @@ import { DemoLog1 } from './React_Hooks/loginfrom';
 
 import { ContextDemo, Level1Component } from './context/context_demo';
 import { ReducerDemo } from './Reducer/demo_reducer';
+import { Login } from './cookies/Cookiesdemo';
+import { CookiesProvider } from 'react-cookie';
+import { ReducerDemo1 } from './cookies/Cookies';
+import FocusInput from './React_Hooks/useRef';
+import PreviousValueExample from './React_Hooks/useRef';
+import DoubleNumberExample, { SimpleEx } from './React_Hooks/useMemo';
+import SimpleSumExample from './React_Hooks/useMemo';
+import SimpleCallbackExample from './React_Hooks/usecallback';
+
+
+
+
+
 
 
 
@@ -75,12 +88,12 @@ import { ReducerDemo } from './Reducer/demo_reducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+ 
   <React.StrictMode>
-
-
-
-<ReducerDemo/>
-  </React.StrictMode>
+  <CookiesProvider>
+    <SimpleCallbackExample/>
+  </CookiesProvider>
+</React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

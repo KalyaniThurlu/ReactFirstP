@@ -46,3 +46,13 @@ export function ReducerDemo1()
         </div>
     )
 }
+/* index.js
+ <React.StrictMode>
+		
+<CookiesProvider>
+
+<App />
+
+</CookiesProvider>
+
+</React.StrictMode>*/

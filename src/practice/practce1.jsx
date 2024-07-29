@@ -1,45 +1,70 @@
 
-import React, { useState } from 'react';
 
-const SimpleForm = () => {
-  const [name, setName] = useState('');
-  const [error, setError] = useState('');
 
-  const handleChange = (e) => {
-    setName(e.target.value);
-  };
+import { useFormik } from "formik"
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name === '') {
-      setError('Name is required');
-    } else {
-      setError('');
-   
-      
+export function ValidationDemo1(){
+
+    function ValidateForm(formCollection)
+    {
+         var errors = {UserName:'', Age:'', Mobile:''};
+
+         if(formCollection.UserName.length===0){
+             errors.UserName = "User Name Required";
+         } else {
+             if(formCollection.UserName.length<4){
+                errors.UserName = "Name too short";
+             } else {
+                errors.UserName = "";
+             }
+         }
+
+         if(isNaN(formCollection.Age)){
+            errors.Age = "Age must be a number";
+         } else {
+            errors.Age = "";
+         }
+
+         if(formCollection.Mobile.match(/\+91\d{10}/))
+          {
+            errors.Mobile = "";
+          } else {
+            errors.Mobile = "Invalid Mobile";
+          }
+
+         return errors;
     }
-  };
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name:</label>
-        
-        <input
-          type="text"
-          value={name}
-          onChange={handleChange}
-          className="text-danger"
-          
-        />
-      
-      <dd className="text-danger"> {error}</dd>
-      
-      
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
+    const formik = useFormik({
+        initialValues: {
+            UserName:'',
+            Age:0,
+            Mobile: ''
+        },
+        validate: ValidateForm,
+        onSubmit: (values)=>{
+            console.log(values);
+        }
+    });
 
-export default SimpleForm;
+    return(
+        <div className="container-fluid">
+            <form  noValidate onSubmit={formik.handleSubmit}>
+                <dl>
+                    <dt>User Name</dt>
+                    <dd><input type="text" onChange={formik.handleChange} name="UserName" /></dd>
+                    <dd className="text-danger">{formik.errors.UserName}</dd>
+                    <dt>Age</dt>
+                    <dd><input type="text" onChange={formik.handleChange} name="Age" /></dd>
+                    <dd className="text-danger">{formik.errors.Age}</dd>
+                    <dt>Mobile</dt>
+                    <dd><input type="text" onChange={formik.handleChange} name="Mobile" /></dd>
+                    <dd className="text-danger">{formik.errors.Mobile}</dd>
+                </dl>
+                <button>Submit</button>
+            </form>
+        </div>
+    )
+}
+
+	

@@ -9,7 +9,11 @@ import { ValidationDemo } from './Ex_validation';
 import { Exyup } from './Ex_yup_validation';
 import { DemoLog1 } from './React_Hooks/loginfrom';
 import { ExuseEffect } from './React_Hooks/useEffect';
-import SimpleForm from './practice/practce1';
+import SimpleForm, { ValidationDemo1 } from './practice/practce1';
+import LoginSignUp, { Excookies, Exreducer, Login1 } from './Form/LoginAndSignUpForm';
+import { ReducerDemo } from './React_Hooks/demo_reducer';
+import { KeyDemo } from './Ex_keyEvent';
+import { Exclass, Exxclass, Product } from './classCompoments/product';
 
 //import {  XmlhttpRequests } from './practice';
 //import { HandlerUserName } from './Exvent';
@@ -61,7 +65,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <SimpleForm/>
+ <Exxclass />
  
 </React.StrictMode>,
 );

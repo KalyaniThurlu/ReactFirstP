@@ -2,8 +2,8 @@
 
 import React from "react";
 export  class Exxclass extends  React.Component{
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state={
             Name:"madhu",
             Age:30

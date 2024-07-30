@@ -14,6 +14,13 @@ import LoginSignUp, { Excookies, Exreducer, Login1 } from './Form/LoginAndSignUp
 import { ReducerDemo } from './React_Hooks/demo_reducer';
 import { KeyDemo } from './Ex_keyEvent';
 import { Exclass, Exxclass, Product } from './classCompoments/product';
+import { MountAndUnmount } from './classCompoments/MountAndUnmountComponent';
+import { StyleComponent } from './classCompoments/styleComponet';
+import { EventBinding, EventBindingComponent } from './classCompoments/EventBinding';
+
+
+
+
 
 //import {  XmlhttpRequests } from './practice';
 //import { HandlerUserName } from './Exvent';
@@ -65,7 +72,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <Exxclass />
+ < EventBinding/>
  
 </React.StrictMode>,
 );

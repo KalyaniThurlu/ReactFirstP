@@ -5,19 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
-import { ValidationDemo } from './Ex_validation';
-import { Exyup } from './Ex_yup_validation';
-import { DemoLog1 } from './React_Hooks/loginfrom';
-import { ExuseEffect } from './React_Hooks/useEffect';
-import SimpleForm, { ValidationDemo1 } from './practice/practce1';
-import LoginSignUp, { Excookies, Exreducer, Login1 } from './Form/LoginAndSignUpForm';
-import { ReducerDemo } from './React_Hooks/demo_reducer';
-import { KeyDemo } from './Ex_keyEvent';
-import { Exclass, Exxclass, Product } from './classCompoments/product';
-import { MountAndUnmount } from './classCompoments/MountAndUnmountComponent';
-import { StyleComponent } from './classCompoments/styleComponet';
-import { EventBinding, EventBindingComponent } from './classCompoments/EventBinding';
-
+import { Exformik } from './classCompoments/FormikComponents';
+import { Exapi } from './classCompoments/Api';
+import { Properties } from './properties';
 
 
 
@@ -72,7 +62,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- < EventBinding/>
+ <Properties/>
  
 </React.StrictMode>,
 );

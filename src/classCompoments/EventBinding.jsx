@@ -25,8 +25,8 @@ export class EventBinding extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={ this.handleInsertClick}>insert</button>
-                <button onClick={this.handleDeletClick}>Delete</button>
+                <button onClick={ this.handleInsertClick} className="btn btn-primary me-2"  >insert</button>
+                <button onClick={this.handleDeletClick} className="btn btn-warning">Delete</button>
                 <p>{this.state.msg}</p>
             </div>
         )

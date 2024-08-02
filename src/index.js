@@ -8,6 +8,15 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import { Exformik } from './classCompoments/FormikComponents';
 import { Exapi } from './classCompoments/Api';
 import { Properties } from './properties';
+import SimpleValidationForm, { Validation } from './validation copy';
+import EmailValidationForm from './validation copy';
+import { Portfolio } from './Router/portfolio';
+
+
+
+
+
+
 
 
 
@@ -62,7 +71,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <Properties/>
+ <Portfolio/>
  
 </React.StrictMode>,
 );

@@ -10,8 +10,8 @@ export function Portfolio(){
     return(
         <div className="container-fluid">
            <BrowserRouter>
-                <header style={{height:'150px'}} className="d-flex justify-content-around p-4 bg-dark text-white">
-                    <div className="profile-pic">
+                <header  className="d-flex justify-content-around p-4 bg-dark text-white">
+                    <div className="profile-pic" style={{height:"150px"}}>
                         <img className="profile-pic" src="flag.jpg" width="100" height="100" />
                         <h4>JOHN</h4>
                     </div>

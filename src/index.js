@@ -11,14 +11,11 @@ import { Properties } from './properties';
 import SimpleValidationForm, { Validation } from './validation copy';
 import EmailValidationForm from './validation copy';
 import { Portfolio } from './Router/portfolio';
+import { Exrouter } from './Router/practice';
+import { FakestoreIndex } from './Router/Router_parameters/fakestoreApi/fakestoreApi_index';
 
 
-
-
-
-
-
-
+import { PracticeIndex } from './Router/practice/practice_index';
 
 
 //import {  XmlhttpRequests } from './practice';
@@ -71,7 +68,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <Portfolio/>
+ <PracticeIndex/>
  
 </React.StrictMode>,
 );

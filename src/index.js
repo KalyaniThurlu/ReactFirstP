@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import { FakestoreIndex } from './Router/Router_parameters/fakestoreApi/fakestoreApi_index';
+import { Exxindex } from './Router/practices/practice_index';
 
 
 
@@ -69,7 +70,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <FakestoreIndex/>
+ <Exxindex/>
  
 </React.StrictMode>,
 );

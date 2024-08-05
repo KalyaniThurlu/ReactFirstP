@@ -1,13 +1,13 @@
 
+
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 
-export function FakestoreDetails(){
+export function Exxdetailes(){
 
      let params = useParams();
-     let navigate = useNavigate();
 
      const [product, setProduct]  = useState({id:0, title:'', category:'', price:0, description:'', rating:{rate:0, count:0}, image:''});
 
@@ -18,15 +18,11 @@ export function FakestoreDetails(){
              setProduct(response.data);
         })
 
-     },[params.id])
-
-     function handleHomeClick(){
-            navigate("/home");
-     }
+     },[])
 
      return(
         <div>
-            <h3>Details  <button onClick={handleHomeClick} className="bi bi-house btn btn-primary"> Home</button> </h3>
+            <h3>Details</h3>
             <div className="card p-2 m-2" style={{width:'200px'}}>
                 <img className="card-img-top" src={product.image}  height="120"/>
                 <div className="card-header">
@@ -43,7 +39,7 @@ export function FakestoreDetails(){
                     </dl>
                 </div>
                 <div className="card-footer">
-                   <textarea rows="4" disabled value={product.description}></textarea>
+                    <Link to={`/products/${product.category}`}>Back to Products</Link>
                 </div>
             </div>
         </div>

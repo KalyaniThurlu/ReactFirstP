@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Table from './components/table/table';
 
+
+
 function App() {
   return (
     <div className="App">
@@ -20,8 +22,8 @@ function App() {
         </a>
       </header>
 
-   
-   
+
+
     </div>
   );
 }

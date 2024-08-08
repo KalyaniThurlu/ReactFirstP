@@ -11,6 +11,18 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"
 
 import { FakestoreIndex1 } from './Router/Ex_search_parameters';
 
+
+import { Loginform } from './MatirealUI/login';
+
+
+
+
+
+
+
+
+
+
 ;
 
 
@@ -77,7 +89,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <FakestoreIndex1/>
+ <Loginform/>
  
 </React.StrictMode>,
 );

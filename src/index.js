@@ -12,30 +12,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import { FakestoreIndex1 } from './Router/Ex_search_parameters';
 
 
-import { Loginform } from './MatirealUI/login';
 
-
-
-
-
-
-
-
-
-
-;
-
-
-
-
-
-
-
-
-
-
-
-
+import { Exdategrid } from './MatirealUI/date_grid';
 
 
 
@@ -89,7 +67,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  
   <React.StrictMode>
- <Loginform/>
+
+{/* <LocalizationProvider dateAdapter="AdapterDayjs"> */}
+
+<Exdategrid/>
+{/* </LocalizationProvider> */}
+
  
 </React.StrictMode>,
 );
